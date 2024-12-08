@@ -1,0 +1,31 @@
+<script>
+    function okno_zamknij_replin()
+ {
+ window.close()
+ }
+</script>
+<textarea cols="80" rows="20">
+    <!DOCTYPE html>
+    <head>
+    <title>Ile sekund</title>
+    <meta charset="utf-8">
+    </head>
+    <body>
+    <div style="color:green;font-size:52px;">
+    <script language="JavaScript">
+    var d1_rep=parseFloat(prompt("liczba1=",""));
+    var d2_rep=parseFloat(prompt("liczba2=",""));
+    var suma;
+    if (d1_rep > d2_rep) {
+        suma = (d1_rep-d2_rep)*86400;
+    } else {
+        suma = (d2_rep-d1_rep)*86400;
+    }
+    
+    document.write(`Ilosc sekund: ${suma}`);
+    </script>
+    </div>
+    </body>
+    </html>
+</textarea>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_replin()"/>

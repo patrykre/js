@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+<title>Sterowanie Wydrukami</title>
+<meta charset="utf-8">
+</head>
+<body style="color: darkblue; font-size: 70px;">
+<div>
+<script language="JavaScript">
+var a_rep=parseFloat(prompt("Podaj pierwsza liczbe A=",""));
+var b_rep=parseFloat(prompt("Podaj druga liczbe B=",""));
+var c_rep = Math.pow(a_rep, 3);
+var d_rep = 3*(Math.pow(a_rep, b_rep))*b_rep;
+var e_rep = 3*a_rep*(Math.pow(b_rep, b_rep));
+var f_rep = Math.pow(b_rep, 3);
+var g_rep = c_rep + d_rep + e_rep + f_rep;
+document.write(`(${a_rep} + ${b_rep})^3=${a_rep}^3 + 3*((${a_rep})^${b_rep})*(${b_rep}) + 3*(${a_rep})*((${b_rep})^${b_rep}) + ${b_rep}^3 = ${c_rep} + ${d_rep} + ${e_rep} + ${f_rep} = ${g_rep}`);
+</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+<title>Ile sekund</title>
+<meta charset="utf-8">
+</head>
+<body>
+<div style="color:green;font-size:52px;">
+<script language="JavaScript">
+var d1_rep=parseFloat(prompt("d1=",""));
+var g1_rep=parseFloat(prompt("g1=",""));
+var d2_rep=parseFloat(prompt("d2=",""));
+var g2_rep=parseFloat(prompt("g2=",""));
+var roznica;
+
+var godziny1_rep = d1_rep * 24 + g1_rep;
+var godziny2_rep = d2_rep * 24 + g2_rep;
+
+if (godziny1_rep >= godziny2_rep) {
+    roznica = godziny1_rep - godziny2_rep;
+} else {
+    roznica = godziny2_rep - godziny1_rep;
+}
+
+roznica = roznica * 3600;
+document.write(`Ilosc sekund: ${roznica}`);
+</script>
+</div>
+</body>
+</html>
