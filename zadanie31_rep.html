@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        var Mebel_replin = {
+            rodzaj: 'krzeslo',
+            cena: 350,
+            rozmiar: '30x30x30cm',
+            pokaz: function () {
+                document.write(this.rodzaj + ' ' + this.cena + ' ' + this.rozmiar)
+            }
+        }
+        Mebel_replin.pokaz();
+        Mebel_replin.waga = 10;
+        Mebel_replin.pokaz_replin=function() {alert('Waga: ' + this.waga + 'kg')}
+        Mebel_replin.pokaz_replin();
+    </script>
+</head>
+
+<body>
+    <br>
+    Programowanie obiektowe. <br>
+    Obiekt to mebel<br>
+    Pola:<br>
+    Rodzaj<br>
+    Cena<br>
+    Rozmiar<br>
+    Metoda: pokaz<br>
+    Nowe pole to waga<br>
+    Nowa metoda to pokaz_replin();<br>
+</body>
+
+</html>

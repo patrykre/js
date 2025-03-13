@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styl.css">
+</head>
+
+<body>
+    <script type="text/javascript">
+        function AB_rep() {
+            var xa_rep = parseFloat(document.getElementById('xa_rep').value);
+            var ya_rep = parseFloat(document.getElementById('ya_rep').value);
+            var xb_rep = parseFloat(document.getElementById('xb_rep').value);
+            var yb_rep = parseFloat(document.getElementById('yb_rep').value);
+            var ab_rep = Math.sqrt(Math.pow((xb_rep - xa_rep), 2) + Math.pow((yb_rep - ya_rep), 2));
+            document.getElementById("ab_rep").innerHTML = "Długość AB = " + ab_rep.toFixed(2) + " cm";
+        }
+
+        function BC_rep() {
+            var xb_rep = parseFloat(document.getElementById('xb_rep').value);
+            var yb_rep = parseFloat(document.getElementById('yb_rep').value);
+            var xc_rep = parseFloat(document.getElementById('xc_rep').value);
+            var yc_rep = parseFloat(document.getElementById('yc_rep').value);
+            var bc_rep = Math.sqrt(Math.pow((xc_rep - xb_rep), 2) + Math.pow((yc_rep - yb_rep), 2));
+            document.getElementById("bc_rep").innerHTML = "Długość BC = " + bc_rep.toFixed(2) + " cm";
+        }
+
+        function AC_rep() {
+            var xa_rep = parseFloat(document.getElementById('xa_rep').value);
+            var ya_rep = parseFloat(document.getElementById('ya_rep').value);
+            var xc_rep = parseFloat(document.getElementById('xc_rep').value);
+            var yc_rep = parseFloat(document.getElementById('yc_rep').value);
+            var ac_rep = Math.sqrt(Math.pow((xc_rep - xa_rep), 2) + Math.pow((yc_rep - ya_rep), 2));
+            document.getElementById("ac_rep").innerHTML = "Długość AC = " + ac_rep.toFixed(2) + " cm";
+        }
+    </script>
+    <h1>Obliczenia</h1><br><br>
+    Punkt A: <input type="text" id="xa_rep" placeholder="xa_rep"> <input type="text" id="ya_rep" placeholder="ya_rep"><br><br>
+    Punkt B: <input type="text" id="xb_rep" placeholder="xb_rep"> <input type="text" id="yb_rep" placeholder="yb_rep"><br><br>
+    Punkt C: <input type="text" id="xc_rep" placeholder="xc_rep"> <input type="text" id="yc_rep" placeholder="yc_rep"><br><br>
+    <input type="button" name="ab" value="Oblicz AB" Onclick="AB_rep()"><br><br>
+    <input type="button" name="bc" value="Oblicz BC" Onclick="BC_rep()"><br><br>
+    <input type="button" name="ac" value="Oblicz AC" Onclick="AC_rep()"><br><br>
+    <div style="color:red;font-size:20px;" id="ab_rep"></div>
+    <div style="color:red;font-size:20px;" id="bc_rep"></div>
+    <div style="color:red;font-size:20px;" id="ac_rep"></div>
+</body>
+
+</html>

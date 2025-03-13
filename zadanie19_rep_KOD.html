@@ -1,0 +1,37 @@
+<script>
+    function okno_zamknij_replin()
+ {
+ window.close()
+ }
+</script>
+<textarea cols="120" rows="30">
+    <html>
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styl.css">
+    </head>
+    
+    <body>
+        <script type="text/javascript">
+            function pole_replin() {
+                var a_rep = parseFloat(document.getElementById('dlugosc').value);
+                var b_rep = a_rep * a_rep;
+                document.getElementById("nazwa").innerHTML = "Pole kwadratu= " + b_rep.toFixed(2) + " cm^2";
+            }
+            function obwod_replin() {
+                var a_rep = parseFloat(document.getElementById('dlugosc').value);
+                var b_rep = 4 * a_rep;
+                document.getElementById("nazwa").innerHTML = "Obwód kwadratu= " + b_rep.toFixed(2) + " cm";
+            }
+        </script>
+        <h1>Wszystko o KWADRACIE</h1><br><br>
+        Podaj długość boku: <input type="text" id="dlugosc" value="podaj długość"> cm<br><br><br>
+        <input type="button" name="pole" value="Oblicz pole" Onclick="pole_replin()"><br><br>
+        <input type="button" name="obwod" value="Oblicz obwod" Onclick="obwod_replin()"><br><br>
+        <div style="color:red;font-size:50px;" id="nazwa"></div>
+    </body>
+    
+    </html>
+</textarea>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_replin()"/>

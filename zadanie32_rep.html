@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function Mebel_replin(rodzaj_k, cena_k, rozmiar_k)//początek konstruktora
+        {
+            this.rodzaj = rodzaj_k;
+            this.cena = cena_k;
+            this.rozmiar = rozmiar_k;
+        }//koniec konstruktora
+        Mebel_replin.prototype.pokaz = function () //definicja metody
+        {
+            alert(this.nazwisko + ' ' + this.imie + ' ' + this.zawod);
+        };
+        Mebel_replin.waga = 10;
+        var mebel1 = new Mebel_replin("krzeslo", 150, "30x30x30");
+        var mebel2 = new Mebel_replin('stol', 300, '120x60x30');
+        var mebel3 = new Mebel_replin('biurko', 250, '90x60x30');
+        mebel1.pokaz();
+        mebel2.pokaz();
+        mebel3.pokaz();
+        document.write("dostęp do właściwości" + "<br>");
+        document.write("mebel1" + " " + mebel1.rodzaj + " " + mebel1.cena + " " + mebel1.rozmiar);
+        document.write("mebel2" + " " + mebel2.rodzaj + " " + mebel2.cena + " " + mebel2.rozmiar);
+        document.write("mebel3" + " " + mebel3.rodzaj + " " + mebel3.cena + " " + mebel3.rozmiar);
+    </script>
+</head>
+
+<body>
+    <br>
+    programowanie obiektowe
+</body>
+
+</html>
