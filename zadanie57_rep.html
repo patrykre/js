@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Pierwiastki liczb</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <div style="color:red;font-size:50px;">
+    <script language="JavaScript">
+      document.write("liczby, ich pierwiastki kwadratowe i czwartego stopnia:<br>");
+      
+      var licznik_rep = 0;
+      
+      for (var i_rep = 22; i_rep <= 22 + 15; i_rep++) {
+        var pierw_2_rep = Math.sqrt(i_rep).toFixed(2);
+        var pierw_4_rep = Math.sqrt(Math.sqrt(i_rep)).toFixed(2);
+        
+        document.write("I=" + i_rep + " pierw_2(" + i_rep + ")=" + pierw_2_rep + " pierw_4(" + i_rep + ")=" + pierw_4_rep + "<br>");
+      }
+    </script>
+  </div>
+</body>
+
+</html>

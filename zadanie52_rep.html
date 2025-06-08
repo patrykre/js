@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Rysowanie prostokąta</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <div style="color:red;font-size:50px;">
+    <script language="JavaScript">
+      var nazwisko_rep = "replin";
+      var imie_rep = "patryk";
+      
+      var a_rep = (nazwisko_rep.length % 4) + 5;
+      var b_rep = (imie_rep.length % 6) + 20;
+      
+      document.write("a=" + a_rep + " b=" + b_rep + "<br>");
+      
+      for (var i_rep = 1; i_rep <= b_rep; i_rep++) {
+        document.write("*");
+      }
+      document.write("<br>");
+      for (var i_rep = 1; i_rep <= a_rep - 2; i_rep++) {
+        document.write("*");
+        for (var j_rep = 1; j_rep <= b_rep - 2; j_rep++) {
+          document.write("&nbsp&nbsp;");
+        }
+        document.write("*<br>");
+      }
+      
+      for (var i_rep = 1; i_rep <= b_rep; i_rep++) {
+        document.write("*");
+      }
+    </script>
+  </div>
+</body>
+
+</html>

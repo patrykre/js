@@ -1,0 +1,33 @@
+<script>
+    function okno_zamknij_replin()
+ {
+ window.close()
+ }
+</script>
+<textarea cols="120" rows="30">
+<!DOCTYPE html>
+
+<head>
+  <title>Sprawdzenie danych replin</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <div style="color:red;font-size:50px;">
+    <script language="JavaScript">
+      var suma_rep = 0;
+      var i_rep = 1;
+
+      while (i_rep <= 1000000) {
+        suma_rep = suma_rep + 1/i_rep;
+        i_rep++;
+      }
+
+      document.write("Suma szeregu harmonicznego od 1 do 1000000 wynosi: " + suma_rep);
+    </script>
+  </div>
+</body>
+
+</html>
+</textarea>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_replin()"/>

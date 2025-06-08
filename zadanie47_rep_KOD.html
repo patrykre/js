@@ -1,0 +1,44 @@
+<script>
+    function okno_zamknij_replin()
+ {
+ window.close()
+ }
+</script>
+<textarea cols="120" rows="30">
+<!DOCTYPE html>
+
+<head>
+  <title>Sprawdzenie danych replin</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <div style="color:red;font-size:50px;">
+    <script language="JavaScript">
+      do {
+      var liczba1 = prompt("Podaj długość boku a=", "");
+      var a_rep = parseFloat(liczba1);
+      
+      var liczba2 = prompt("Podaj długość boku b=", "");
+      var b_rep = parseFloat(liczba2);
+      
+      var liczba3 = prompt("Podaj długość boku c=", "");
+      var c_rep = parseFloat(liczba3);
+      
+      var warunek = (a_rep > 0) && (b_rep > 0) && (c_rep > 0) && 
+              (a_rep + b_rep > c_rep) && (a_rep + c_rep > b_rep) && (b_rep + c_rep > a_rep);
+      
+      if (!warunek) {
+        alert("Podane wartosci nie tworza trojkata - sproboj ponownie");
+      }
+      }
+      while (!warunek);
+      
+      document.write("boki trójkąta: a=" + a_rep + ", b=" + b_rep + ", c=" + c_rep + "<br>");
+    </script>
+  </div>
+</body>
+
+</html>
+</textarea>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_replin()"/>

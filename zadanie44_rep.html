@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Wyświetlanie imienia i nazwiska</title>
+</head>
+<body>
+<div>
+  <script language="JavaScript">
+    var nazwisko_rep = "Replin";
+    var imie_rep = "Patryk";
+    
+    var ile_razy_wyswietlic_rep = (nazwisko_rep.length % 4) + 10;
+    
+    var wielkosc_liter_rep = (nazwisko_rep.length % 3) + 40;
+    
+    document.write("<div style='font-size:" + wielkosc_liter_rep + "px;'>");
+    
+    for(var i_r = 1; i_r <= ile_razy_wyswietlic_rep; i_r++) {
+      if(i_r % 2 !== 0) {
+        document.write(i_r + ". " + nazwisko_rep + "<br>");
+      } else {
+        document.write(i_r + ". " + imie_rep + "<br>");
+      }
+    }
+    
+    document.write("</div>");
+  </script>
+</div>
+</body>
+</html>

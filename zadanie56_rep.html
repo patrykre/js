@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Liczby pierwsze</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <div style="color:red;font-size:50px;">
+    <script language="JavaScript">
+      document.write("w(i) = i<sup>2</sup> + i + 41<br>");
+      document.write("Liczby pierwsze dla i = 0 do 39:<br>");
+
+      for (var i_rep = 0; i_rep <= 39; i_rep++) {
+        var w_rep = i_rep * i_rep + i_rep + 41;
+        
+        document.write("i=" + i_rep + " w(" + i_rep + ")=" + w_rep + "<br>");
+      }
+    </script>
+  </div>
+</body>
+
+</html>
